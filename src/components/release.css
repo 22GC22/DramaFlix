@@ -1,0 +1,78 @@
+/* Animated divs */
+.container {
+    overflow: hidden;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+#Release{
+    color: white;
+}
+#animateddivsall{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+  .animated {
+      width: 210px;
+      height: 280px;
+      background-color: red;
+      font-weight: bold;
+      position: relative;
+      animation: mymove 3s infinite;
+      
+    }
+    .animated1 {
+      animation-direction: alternate;
+    }
+    .animated2{
+      animation-direction: alternate-reverse;
+    }
+    
+    #div1 {
+      animation-timing-function: linear;
+      background-image: url("../images/release/banner1.jpg");
+      background-size: cover;
+  }
+    #div2 {
+      animation-timing-function: ease;
+      background-image: url("../images/release/banner2.jpg");
+      background-size: cover;
+  }
+    #div3 {
+      animation-timing-function: ease-in;
+      background-image: url("../images/release/banner3.jpg");
+      background-size: cover;
+  }
+    #div4 {
+      animation-timing-function: ease-out;
+      background-image: url("../images/release/banner4.jpg");
+      background-size: cover;
+  }
+
+  #div5 {
+    animation-timing-function: linear;
+    background-image: url("../images/release/banner5.jpg");
+    background-size: cover;
+}
+  #div6 {
+    animation-timing-function: ease;
+    background-image: url("../images/release/banner6.jpg");
+    background-size: cover;
+}
+  #div7 {
+    animation-timing-function: ease-in;
+    background-image: url("../images/release/banner7.jpg");
+    background-size: cover;
+}
+  #div8 {
+    animation-timing-function: ease-out;
+    background-image: url("../images/release/banner8.jpg");
+    background-size: cover;
+}
+    
+    @keyframes mymove {
+      from {left: 0px;}
+      to {left: 40vw;}
+    }
+    
